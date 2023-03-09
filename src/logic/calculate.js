@@ -1,5 +1,4 @@
 import Big from "big.js";
-
 import operate from "./operate";
 import isNumber from "./isNumber";
 
@@ -32,7 +31,7 @@ export default function calculate(obj, buttonName) {
       }
       return { next: buttonName };
     }
-    // If there is no operation, update next and clear the value
+    // If there is no operation, update next and clear the value ///
     if (obj.next) {
       const next = obj.next === "0" ? buttonName : obj.next + buttonName;
       return {
